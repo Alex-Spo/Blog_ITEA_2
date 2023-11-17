@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from accounts.models import User, Profile
+from accounts.models import User, Profile,ActivateToken, PasswordsResetToken
 
 
 @admin.register(User)
@@ -29,4 +29,15 @@ class AdminProfile(admin.ModelAdmin):
     list_display = ('user', 'gender', 'date_of_birth')
     list_filter = ('gender', 'date_of_birth')
     search_fields = ('user',)
+
+
+@admin.register(PasswordsResetToken)
+class PasswordsResetTokenAdmin(admin.ModelAdmin):
+    list_display = ('user', 'token', 'created')
+    search_fields = ('user', 'token')
+
+@admin.register(ActivateToken)
+class ActivateTokenAdmin(admin.ModelAdmin):
+    list_display = ('user', 'token', 'created')
+    search_fields = ('user', 'token')
 

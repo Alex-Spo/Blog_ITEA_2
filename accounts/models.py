@@ -2,6 +2,8 @@ import hashlib
 
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.utils.crypto import get_random_string
+from django.utils import timezone
 
 from accounts.managers import UserManager
 from accounts.validators import (
@@ -64,3 +66,37 @@ class Profile(models.Model):
         super().save(*args, **kwargs)
 
 
+def get_random_token():
+    pass
+
+
+class AbstractToken(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    token = models.CharField(max_length=32, default='', unique=True)
+    created = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        abstract = True
+
+    def save(self, *args, **kwargs):
+        self.token = get_random_string(length=32)
+        super(AbstractToken, self).save(*args, **kwargs)
+
+    def verify_token(self):
+        validate_expiration = timezone.localtime(self.created) < timezone.now() - timezone.timedelta(days=1)
+        return validate_expiration
+
+class ActivateToken(AbstractToken):
+    def __str__(self):
+        return f'{self.user}\'s activate token'
+
+    class Meta:
+        verbose_name_plural = 'Activation Tokens'
+
+
+class PasswordsResetToken(AbstractToken):
+    def __str__(self):
+        return f'{self.user}\'s password reset token'
+
+    class Meta:
+        verbose_name_plural = 'Password reset Tokens'
