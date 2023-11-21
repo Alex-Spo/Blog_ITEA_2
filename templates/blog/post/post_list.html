@@ -7,7 +7,8 @@
 
 {% block content %}
 <div class="row mb-2">
-    {% for post in posts %}
+    {% for post in page_obj %}
+
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
@@ -24,5 +25,24 @@
     </div>
     {% endfor %}
 
+
   </div>
+
+<nav aria-label="">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="?page={{page_obj.number}} - 1">Back</a></li>
+    <li class="page-item"><a class="page-link" href="?page=1">1</a></li>
+    <li class="page-item"><a class="page-link" href="?page=2">2</a></li>
+    <li class="page-item"><a class="page-link" href="?page=3">3</a></li>
+    <li class="page-item"><a class="page-link" href="?page={{page_obj.number}} + 1">Next</a></li>
+  </ul>
+</nav>
+{{posts}}
+
+<p>в blog/views.py добавил
+  paginator = Paginator(posts, 4)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)</p>
+
+
 {% endblock %}
