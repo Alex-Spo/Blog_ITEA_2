@@ -16,7 +16,7 @@ User = get_user_model()
 def register_view(request):
     if request.user.is_authenticated:
         messages.info(request, 'You are already register.')
-        return redirect('accounts:test')
+        return redirect('blog:post_list')
 
     if request.method == 'POST':
         form = forms.RegisterForm(request.POST)
@@ -40,7 +40,7 @@ def activate_account_view(request, username, token):
 
     if user.is_active:
         messages.error(request, 'User is already activated.')
-        return redirect('accounts:test')
+        return redirect('blog:post_list')
 
     if token.verify_token():
         user.is_active = True
@@ -48,7 +48,7 @@ def activate_account_view(request, username, token):
         user.save()
 
         messages.success(request, 'Activation complete.')
-        return redirect('accounts:test')
+        return redirect('accounts:login')
 
     messages.error(request, 'Token expired')
     return redirect('accounts:test')
@@ -58,7 +58,7 @@ def activate_account_view(request, username, token):
 def login_view(request):
     if request.user.is_authenticated:
         messages.info(request, 'You are already logged in.')
-        return redirect('accounts:test')
+        return redirect('blog:post_list')
 
     if request.method == 'POST':
         form = forms.LoginForm(request.POST)
@@ -76,7 +76,7 @@ def login_view(request):
 
             if user:
                 login(request, user)
-                return redirect('accounts:test')
+                return redirect('blog:post_list')
             else:
                 messages.error(request, 'Invalid email or password')
                 return redirect('accounts:login')
@@ -122,7 +122,7 @@ def activate_account_view(request, username, token):
 def login_view(request):
     if request.user.is_authenticated:
         messages.info(request, 'You are already logged in.')
-        return redirect('accounts:test')
+        return redirect('block:post_list')
 
     if request.method == 'POST':
         form = forms.LoginForm(request.POST)
@@ -158,5 +158,4 @@ def logout_view(request):
     return redirect('accounts:login')
 
 
-def test_view(request):
-    return render(request, 'home.html')
+

@@ -6,17 +6,17 @@
 
 
 {% block content %}
-<div class="row mb-2">
-    {% for post in page_obj %}
+<div class="row mb-5">
+    {% for post in posts %}
 
-    <div class="col-md-6">
+    <div class="col-md-6 mt-5">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-primary">{{ post.category|capfirst }}</strong>
           <h3 class="mb-0">{{ post.title }}</h3>
           <div class="mb-1 text-muted">{{ post.publish|timesince }}</div>
           <p class="card-text mb-auto">{{ post.body|truncatewords:15 }}</p>
-          <a href="#" class="stretched-link">Continue reading</a>
+          <a href="{{ post.get_absolute_url }}" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
           <img src="{{ post.image_url }}" width="300" height="200" alt="post image">
@@ -27,22 +27,6 @@
 
 
   </div>
-
-<nav aria-label="">
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="?page={{page_obj.number}} - 1">Back</a></li>
-    <li class="page-item"><a class="page-link" href="?page=1">1</a></li>
-    <li class="page-item"><a class="page-link" href="?page=2">2</a></li>
-    <li class="page-item"><a class="page-link" href="?page=3">3</a></li>
-    <li class="page-item"><a class="page-link" href="?page={{page_obj.number}} + 1">Next</a></li>
-  </ul>
-</nav>
-{{posts}}
-
-<p>в blog/views.py добавил
-  paginator = Paginator(posts, 4)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)</p>
 
 
 {% endblock %}
