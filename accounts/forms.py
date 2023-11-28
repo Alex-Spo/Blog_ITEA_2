@@ -2,7 +2,14 @@ from django import forms
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
 
+from accounts.models import Profile
+
 User = get_user_model()
+
+
+class DateInputCustom(forms.DateInput):
+    input_type = 'date'
+
 
 class LoginForm(forms.Form):
     email = forms.EmailField()
@@ -12,6 +19,7 @@ class LoginForm(forms.Form):
         initial=True,
         widget=forms.CheckboxInput()
     )
+
 
 class RegisterForm(UserCreationForm):
     class Meta:
@@ -26,11 +34,37 @@ class RegisterForm(UserCreationForm):
             'password2': forms.PasswordInput(),
         }
 
-    # def __init__(self, *args, **kwargs):
-    #     super(RegisterForm, self).__init__(*args, **kwargs)
-    #     for field_name, field in self.fields.items():
-    #         field.widget.attrs.update({'class': 'form-control'})
-    #
-    #     self.fields['username'].widget.attrs.update({'placeholder': 'Enter your username'})
+
+class ProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['gender', 'date_of_birth', 'avatar', 'bio', 'info']
+
+        labels = {
+            'date_of_birth': 'Date of your Birth',
+            'avatar': 'Avatar URL'
+        }
+
+        placeholders = {
+            'avatar': 'Left empty to use gravatar',
+            'bio': 'Write a short biography',
+            'info': 'Enter some additional information'
+        }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field_name, field in self.fields.items():
+            field.widget.attrs.update({
+                'placeholder': self.Meta.placeholders.get(field_name, '')
+            })
+        self.fields['date_of_birth'].widget = DateInputCustom()
+
+    # def clean_date_of_birth(self):
+    #     data = self.cleaned_data['date_of_birth']
+    #     try:
+    #         validate_birth_date(data)
+    #     except ValidationError as exp:
+    #         self.add_error('date_of_birth', str(exp))
+    #     return data
 
 

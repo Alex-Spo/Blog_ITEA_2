@@ -48,6 +48,7 @@ class Profile(models.Model):
     avatar = models.URLField(max_length=255, blank=True)
     gender = models.CharField(max_length=6, choices=GENDER_CHOICES)
     date_of_birth = models.DateField(validators=[validate_birth_date])
+    bio = models.TextField()
     info = models.CharField(max_length=255)
 
     def __str__(self):

@@ -1,0 +1,792 @@
+WARNING 2023-11-27 23:48:05,249 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-27 23:48:25,698 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-27 23:48:36,152 log Internal Server Error: /weather/today/
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\views.py", line 30, in post
+    city_weather = weather_service.get_weather(city)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services\weather_services.py", line 22, in get_weather
+    response_json, status_code = self._get_weather_data_from_api(city)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services\weather_services.py", line 29, in _get_weather_data_from_api
+    response = requests.get(weather_api_url)
+NameError: name 'requests' is not defined
+ERROR 2023-11-27 23:48:36,154 basehttp "POST /weather/today/ HTTP/1.1" 500 85565
+WARNING 2023-11-27 23:55:18,031 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-27 23:55:27,586 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-27 23:55:35,758 log Internal Server Error: /weather/today/
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\views.py", line 30, in post
+    city_weather = weather_service.get_weather(city)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services\weather_services.py", line 25, in get_weather
+    response_json, status_code = self._get_weather_data_from_api(city)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services\weather_services.py", line 32, in _get_weather_data_from_api
+    response = requests.get(weather_api_url)
+NameError: name 'requests' is not defined
+ERROR 2023-11-27 23:55:35,760 basehttp "POST /weather/today/ HTTP/1.1" 500 85565
+WARNING 2023-11-27 23:57:20,116 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-27 23:57:38,357 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-27 23:58:36,256 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-27 23:58:37,501 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-27 23:59:18,375 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-27 23:59:19,815 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-27 23:59:36,727 log Internal Server Error: /weather/today/
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\views.py", line 30, in post
+    city_weather = weather_service.get_weather(city)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services\weather_services.py", line 25, in get_weather
+    response_json, status_code = self._get_weather_data_from_api(city)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services\weather_services.py", line 32, in _get_weather_data_from_api
+    response = requests.get(weather_api_url)
+NameError: name 'requests' is not defined
+ERROR 2023-11-27 23:59:36,730 basehttp "POST /weather/today/ HTTP/1.1" 500 85565
+WARNING 2023-11-28 00:05:08,478 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:05:13,847 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-28 00:05:24,422 log Internal Server Error: /weather/today/
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\views.py", line 30, in post
+    city_weather = weather_service.get_weather(city)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services\weather_services.py", line 25, in get_weather
+    response_json, status_code = self._get_weather_data_from_api(city)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services\weather_services.py", line 32, in _get_weather_data_from_api
+    response = requests.get(weather_api_url)
+NameError: name 'requests' is not defined
+ERROR 2023-11-28 00:05:24,423 basehttp "POST /weather/today/ HTTP/1.1" 500 85565
+WARNING 2023-11-28 00:11:40,959 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:11:43,740 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-28 00:11:46,335 log Internal Server Error: /weather/today/
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\views.py", line 30, in post
+    city_weather = weather_service.get_weather(city)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services\weather_services.py", line 25, in get_weather
+    response_json, status_code = self._get_weather_data_from_api(city)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services\weather_services.py", line 32, in _get_weather_data_from_api
+    response = requests.get(weather_api_url)
+NameError: name 'requests' is not defined
+ERROR 2023-11-28 00:11:46,336 basehttp "POST /weather/today/ HTTP/1.1" 500 85565
+WARNING 2023-11-28 00:38:30,595 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:38:38,216 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:38:41,644 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:39:14,111 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:39:17,740 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:43:05,446 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:43:15,431 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:43:18,360 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:44:49,158 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:45:33,500 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:46:02,416 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:46:22,292 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:46:24,978 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:47:37,499 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 00:48:18,397 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:02:24,329 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:02:49,635 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:02:57,367 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:03:08,072 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:06:05,767 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:06:14,467 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:06:19,348 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:06:23,297 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:06:29,446 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:06:33,565 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:06:52,088 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:09:14,990 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:09:16,016 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:09:17,479 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:09:18,110 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:09:19,994 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:09:21,202 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:09:22,914 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:09:23,755 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:09:36,880 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:10:58,046 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:11:12,823 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:11:36,072 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:14:02,984 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:14:05,583 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:14:29,095 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:15:21,379 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:15:23,512 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:15:24,528 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 01:15:45,983 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 08:45:37,664 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 08:45:37,745 log Not Found: /favicon.ico
+WARNING 2023-11-28 08:45:37,745 basehttp "GET /favicon.ico HTTP/1.1" 404 3507
+WARNING 2023-11-28 08:46:23,540 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 08:46:25,744 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 08:46:28,062 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 08:51:14,718 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 08:52:21,841 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:05:01,041 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:06:45,171 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:06:46,153 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:06:47,922 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:07:12,729 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:07:34,388 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:07:35,332 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:08:04,021 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:09:11,220 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:09:20,501 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:09:56,387 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:09:57,484 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:11:58,150 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:12:21,820 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:13:34,590 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:13:37,415 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:14:16,108 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:14:20,056 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:16:02,376 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:16:03,351 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:16:37,289 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:16:37,979 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:18:46,480 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:19:02,283 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:19:02,758 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:21:02,814 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:23:24,732 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:23:26,892 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:23:28,802 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:26:08,493 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:26:09,423 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:27:49,958 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:29:18,099 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:29:19,058 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:30:19,513 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:30:20,498 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:31:22,169 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:34:25,765 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:34:30,491 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:34:42,442 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:35:28,841 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:35:48,103 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:35:49,007 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:48:37,572 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 09:48:40,535 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:07:07,715 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:09:02,764 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:10:04,050 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:10:05,401 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:10:08,344 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:10:18,861 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:10:20,530 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:10:23,861 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-28 11:13:08,789 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 12, in post_list_view
+    paginator = Paginator(posts, 4)  # Show 4 contacts per page.
+NameError: name 'Paginator' is not defined
+ERROR 2023-11-28 11:13:08,790 basehttp "GET / HTTP/1.1" 500 66637
+WARNING 2023-11-28 11:13:50,024 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-28 11:15:00,553 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 19, in post_list_view
+    return render(request, "list.html", {"page_obj": page_obj})
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list.html
+ERROR 2023-11-28 11:15:00,553 basehttp "GET / HTTP/1.1" 500 82413
+ERROR 2023-11-28 11:16:29,466 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 19, in post_list_view
+    return render(request, "list.html", {"page_obj": page_obj})
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list.html
+ERROR 2023-11-28 11:16:29,468 basehttp "GET / HTTP/1.1" 500 82448
+ERROR 2023-11-28 11:16:30,923 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 19, in post_list_view
+    return render(request, "list.html", {"page_obj": page_obj})
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list.html
+ERROR 2023-11-28 11:16:30,924 basehttp "GET / HTTP/1.1" 500 82448
+ERROR 2023-11-28 11:16:48,070 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 19, in post_list_view
+    return render(request, "blog/post/post_list.html", {"page_obj": page_obj})
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list.html
+ERROR 2023-11-28 11:16:48,071 basehttp "GET / HTTP/1.1" 500 82478
+WARNING 2023-11-28 11:16:49,705 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:18:48,525 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:18:50,956 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:19:21,347 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:19:38,864 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:29:40,166 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:30:05,968 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-28 11:39:43,580 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 20, in post_list_view
+    return render(request, "blog/post/post_list.html", {"page_obj": page_obj})
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 39: 'endblock', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2023-11-28 11:39:43,584 basehttp "GET / HTTP/1.1" 500 184082
+WARNING 2023-11-28 11:40:15,499 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:40:24,335 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:40:27,643 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:40:29,335 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:40:32,525 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:40:34,142 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:40:35,516 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:42:03,834 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:42:06,366 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:42:14,406 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:42:57,952 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:43:04,190 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:47:10,219 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:47:13,154 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:47:15,520 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:49:16,375 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:52:27,347 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:52:28,193 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:52:30,979 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:54:17,738 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:54:57,071 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:54:58,925 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:56:00,717 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:56:01,678 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:59:36,599 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:59:38,924 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 11:59:40,008 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:03:44,898 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:03:47,505 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:03:48,623 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:05:56,263 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:50:55,999 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:52:28,830 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:52:30,314 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:52:32,650 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:52:32,693 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:54:00,485 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:54:01,916 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:54:31,012 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:54:40,244 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:54:42,113 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:54:42,889 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:55:07,972 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:58:21,990 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:58:32,020 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:58:33,600 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:58:42,488 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 12:58:44,356 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-28 13:04:43,102 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 20, in post_list_view
+    return render(request, "blog/post/post_list.html", {"page_obj": page_obj})
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\paginator.py", line 201, in previous_page_number
+    return self.paginator.validate_number(self.number - 1)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\paginator.py", line 52, in validate_number
+    raise EmptyPage(_("That page number is less than 1"))
+django.core.paginator.EmptyPage: That page number is less than 1
+ERROR 2023-11-28 13:04:43,105 basehttp "GET /?page=1 HTTP/1.1" 500 187486
+WARNING 2023-11-28 13:05:03,446 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:05:07,358 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-28 13:05:11,943 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 20, in post_list_view
+    return render(request, "blog/post/post_list.html", {"page_obj": page_obj})
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\paginator.py", line 201, in previous_page_number
+    return self.paginator.validate_number(self.number - 1)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\paginator.py", line 52, in validate_number
+    raise EmptyPage(_("That page number is less than 1"))
+django.core.paginator.EmptyPage: That page number is less than 1
+ERROR 2023-11-28 13:05:11,946 basehttp "GET /?page=1 HTTP/1.1" 500 187349
+ERROR 2023-11-28 13:07:31,835 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 20, in post_list_view
+    return render(request, "blog/post/post_list.html", {"page_obj": page_obj})
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\paginator.py", line 201, in previous_page_number
+    return self.paginator.validate_number(self.number - 1)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\paginator.py", line 52, in validate_number
+    raise EmptyPage(_("That page number is less than 1"))
+django.core.paginator.EmptyPage: That page number is less than 1
+ERROR 2023-11-28 13:07:31,838 basehttp "GET /?page=1 HTTP/1.1" 500 187938
+ERROR 2023-11-28 13:07:33,096 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 20, in post_list_view
+    return render(request, "blog/post/post_list.html", {"page_obj": page_obj})
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\paginator.py", line 201, in previous_page_number
+    return self.paginator.validate_number(self.number - 1)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\paginator.py", line 52, in validate_number
+    raise EmptyPage(_("That page number is less than 1"))
+django.core.paginator.EmptyPage: That page number is less than 1
+ERROR 2023-11-28 13:07:33,098 basehttp "GET /?page=1 HTTP/1.1" 500 187938
+WARNING 2023-11-28 13:07:43,670 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:07:48,438 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:07:52,427 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-28 13:07:55,785 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 20, in post_list_view
+    return render(request, "blog/post/post_list.html", {"page_obj": page_obj})
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\paginator.py", line 201, in previous_page_number
+    return self.paginator.validate_number(self.number - 1)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\paginator.py", line 52, in validate_number
+    raise EmptyPage(_("That page number is less than 1"))
+django.core.paginator.EmptyPage: That page number is less than 1
+ERROR 2023-11-28 13:07:55,788 basehttp "GET /?page=1 HTTP/1.1" 500 187801
+WARNING 2023-11-28 13:08:02,946 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:08:04,852 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:09:16,280 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:09:19,186 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:09:21,771 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:09:23,580 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:09:28,849 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:09:31,585 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:10:29,557 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:10:31,237 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:10:33,187 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:10:35,090 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:10:36,575 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:10:44,028 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+ERROR 2023-11-28 13:10:45,446 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog\views.py", line 20, in post_list_view
+    return render(request, "blog/post/post_list.html", {"page_obj": page_obj})
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\venv\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 8: 'block'. Looking for one of: endblock.
+ERROR 2023-11-28 13:10:45,448 basehttp "GET /?page=1 HTTP/1.1" 500 167770
+WARNING 2023-11-28 13:11:38,966 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:11:41,407 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:11:43,168 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:11:46,376 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:11:48,637 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:11:49,996 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:11:51,569 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2023-11-28 13:11:53,136 basehttp "GET /static/css/styles.css HTTP/1.1" 404 1801

@@ -1,5 +1,8 @@
 from django.contrib.auth.decorators import login_required
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
+
+from django.core.paginator import Paginator
+
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 
@@ -9,7 +12,15 @@ from blog import forms
 
 def post_list_view(request: HttpRequest) -> HttpResponse:
     posts = models.Post.published.all()
-    return render(request, 'blog/post/post_list.html', {'posts': posts})
+
+    paginator = Paginator(posts, 4)  # Show 4 contacts per page.
+
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request, "blog/post/post_list.html", {"page_obj": page_obj})
+
+    # return render(request, 'blog/post/post_list.html', {'posts': posts})
+    # return render(request, 'blog/post/post_list.html', {'posts': posts})
 
 
 def post_detail_view(request: HttpRequest, post_slug: str) -> HttpResponse:

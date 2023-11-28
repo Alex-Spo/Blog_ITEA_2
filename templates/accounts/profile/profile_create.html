@@ -1,0 +1,28 @@
+{% extends 'base/_base.html' %}
+{% load crispy_forms_filters %}
+
+{% block title %}
+  Create profile {{ request.user.get_full_name }}
+{% endblock title %}
+
+{% block content %}
+
+  <div class="col-3">
+    <h1>ergtwew</h1>
+    <h1>ergtwew</h1>
+    <h1>ergtwew</h1>
+    <h2>Create profile {{ request.user.get_full_name }}</h2>
+
+    <form action="" method="post">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <button type="submit" class="btn btn-info">Create</button>
+    </form>
+  </div>
+
+    <h1>ergtwew</h1>
+    <h1>ergtwew</h1>
+    <h1>ergtwew</h1>
+
+
+{% endblock content %}

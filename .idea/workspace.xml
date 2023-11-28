@@ -2,23 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f3dc50-f7da-4b1f-9452-8eca07b4e514" name="Changes" comment="Add Blog 2">
-      <change afterPath="$PROJECT_DIR$/blog/migrations/0002_alter_comment_body.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templatetags/blog_filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/scroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/post/comment/comment_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/post/post_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/middleware.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0003_profile_bio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0004_alter_profile_bio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0003_alter_commentdislike_comment_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/change_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/profile/profile_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/profile/profile_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/profile/profile_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/weather/today.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/dto/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/dto/weather_dto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/services/weather_services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/stiyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/stiyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base/nav/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/nav/_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/post/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/post/post_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/post/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/post/post_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +50,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -50,22 +72,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Code With Me" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services" />
+      <recent name="C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\dto" />
       <recent name="C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\blog" />
       <recent name="C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\itea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC6700\Desktop\ITEA_DJANGO" />
       <recent name="C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\templates\base" />
       <recent name="C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3" />
       <recent name="C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\config" />
       <recent name="C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\itea" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.weather_services (1)">
     <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,8 +112,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="weather_services (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\PC6700\AppData\Local\Programs\Python\Python310\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weather/services" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weather/services/weather_services.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="weather_services" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\PC6700\AppData\Local\Programs\Python\Python310\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weather/services" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="C:\Users\PC6700\Desktop\ITEA_DJANGO\Itea_Django_3\weather\services\weather_services.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.weather_services (1)" />
+        <item itemvalue="Python.weather_services" />
         <item itemvalue="Python.views" />
       </list>
     </recent_temporary>
